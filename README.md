@@ -1,8 +1,8 @@
 # StarCraft II Legacy of the Void - Promotional Website
 
-A responsive promotional website for StarCraft II: Legacy of the Void built with Angular 7. This project showcases the game's features, campaigns, and commanders with an immersive user experience featuring video backgrounds and interactive elements.
+A responsive promotional website for StarCraft II: Legacy of the Void
 
-A side project for fun — revisiting front-end design after spending much of my time on backends and system-level development.
+A side project for fun — revisiting front-end design after spending much of my time on backends and embedded  development.
 
 Shop page and an overall improved version can be found here https://github.com/ymebrugts/frontend-iprwc and https://github.com/ymebrugts/backend-iprwc
 
