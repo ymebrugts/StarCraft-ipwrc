@@ -11,10 +11,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ShopComponent,
     FooterComponent,
-    HeaderComponent,
     NavigationComponent
   ],
   imports: [
