@@ -1,20 +1,88 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header>
+  <app-navigation></app-navigation>
+  <!-- Don't kill me for using div. I don't want to use video here since I need to add a picture under the video -->
+  <div id="background-container">
+    <video id="background-video-container" autoplay="autoplay" loop="loop">
+      <source src="../assets/videos/header_bg.webm" type="video/webm" />
+      <source src="../assets/videos/header_bg.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="header-content">
+    <figure>
+      <img alt="Starcraft logo" src="../assets/images/lotv-logo.png"/>
+    </figure>
+    <div class="button-container">
+      <a class="nukopenknop" href="#">
+        <span>BUY NOW</span>
+      </a>
+    </div>
 
+    <!-- sectionbox with #fff header -->
+    <section id="headsection1">
+      <h1>RECLAIM YOUR HOMEWORLD!</h1>
+      <p>You are Hierarch Artanis, leader of the mighty protoss race. Years ago, your homeworld of Aiur fell to the merciless zerg Swarm. Now, at long last, you have raised a powerful fleet of warships known as the Golden Armada, and are poised to reclaim your world. But an ancient evil—Amon—threatens this destiny and the fate of the entire galaxy. Only you can reunite the protoss factions and defeat the coming darkness before it consumes all life in the sector.</p>
+    </section>
+    <!-- section "what is Starcraft" box background: rgba(0, 80, 255, 0.1);-->
+    <section id="headsection2">
+      <h2>What is Starcraft II?</h2>
+      <p>StarCraft II: Legacy of the Void is a standalone expansion pack to the military science fiction real-time strategy game StarCraft II: Wings of Liberty, and the third and final part of the StarCraft II trilogy developed by Blizzard Entertainment.</p>
+      <div class="ytvid">
+        <iframe src="https://www.youtube.com/embed/M_XwzBMTJaM?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </section>
+
+  </div>
+</header>
+<main>
+  <!-- section "modes" with #25D1FC header background: rgba(0, 80, 255, 0.1);-->
+  <h2>Three exhilarating game-modes</h2>
+  <div id="wrappergamemodes">
+    <section id="gamemodes">
+      <article id="campaign" class="sc2box">
+        <h2>Campaign</h2>
+        <div class="videocontainer">
+          <iframe src="https://www.youtube.com/embed/zavh5oB7bwk?rel=0;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
+        </div>
+        <p>If you’re new to the StarCraft world, the epic campaign is the perfect mode to start playing. Starcraft 2 Wings of Liberty, the first chapter in the three-part saga, is now free. There’s never been a better time to experience StarCraft II.</p>
+      </article>
+      <article id="coop" class="sc2box">
+        <h2>Co-op missions</h2>
+        <div class="videocontainer">
+          <iframe src="https://www.youtube.com/embed/9AIZTrnjYAM?rel=0;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
+        </div>
+        <p>Co-Op is a new game mode introduced in Legacy of the Void which pits you and a friend against challenging odds in action-packed, objective-driven missions.</p>
+      </article>
+
+      <article id="multiplayer" class="sc2box">
+        <h2>Multiplayer</h2>
+        <div class="videocontainer">
+          <iframe src="https://www.youtube-nocookie.com/embed/xRSJzt88Jwg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
+        </div>
+        <p>Grow your skills and climb the multiplayer ladder in the world’s premier real-time-strategy game. Play 1v1 against other human opponents or for friends who want to compete together in 2v2s, 3v3s, or 4v4s</p>
+      </article>
+    </section>
+  </div>
+
+
+  <!-- section "How to play -->
+  <section id="howtoplay">
+    <h3>The Basics</h3>
+    <h2>A GUIDE TO CONQUERING THE GALAXY</h2>
+    <ol id="howtoplaylistol">
+      <li class="howtoplaylist">
+        <h3 class="howtoplay-heading"><span>1</span> Construct a Base</h3>
+        <p class="howtoplay-text">Gather minerals and vespene gas to build production structures and upgrade your technology.</p>
+      </li>
+      <li class="howtoplaylist">
+        <h3 class="howtoplay-heading"><span>2</span> Build an Army</h3>
+        <p class="howtoplay-text">Spend minerals and vespene gas to amass a powerful and distinctive army.</p>
+      </li>
+      <li class="howtoplaylist">
+        <h3 class="howtoplay-heading"><span>3</span> Ride to Battle</h3>
+        <p class="howtoplay-text">Deploy your forces with creativity and finesse to overcome your opponents.</p>
+      </li>
+    </ol>
+  </section>
+</main>
+<app-footer></app-footer>

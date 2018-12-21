@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+
+@font-face {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Source Sans Pro"), url(assets/fonts/SourceSansPro-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url(assets/fonts/SourceSansPro-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: Eurostile-reg;
+  src: url(assets/fonts/eurostile-reg.woff2) format("woff2"), url(assets/fonts/eurostile-reg.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Eurostile-bol;
+  src: url(assets/fonts/eurostile-bol.woff2) format("woff2"), url(assets/fonts/eurostile-bol.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Eurostile Extd;
+  src: url(assets/fonts/eurostileext-reg.woff2) format("woff2"), url(assets/fonts/eurostileext-reg.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Eurostile Extd;
+  src: url(assets/fonts/eurostileext-med.woff2) format("woff2"), url(assets/fonts/eurostileext-med.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sui_generis_rgregular';
+  src: url('assets/fonts/sui_generis_rg-webfont.eot');
+  src: url('assets/fonts/sui_generis_rg-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/sui_generis_rg-webfont.woff2') format('woff2'), url('assets/fonts/sui_generis_rg-webfont.woff') format('woff'), url('assets/fonts/sui_generis_rg-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
