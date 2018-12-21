@@ -11,6 +11,17 @@ Shop page and an overall improved version can be found here https://github.com/y
 ### Desktop View
 ![Desktop Screenshot](docs/desktop.jpg)
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ### Mobile View
 ![Mobile Screenshot](docs/mobile.jpg)
 
