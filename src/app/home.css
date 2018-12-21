@@ -1,0 +1,333 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+/* Text */
+h2 {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.4em;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.8em;
+}
+
+.ytvid iframe {
+  width:600px;
+  height:315px;
+}
+
+/* Video verkleinen beiden kanten en image background */
+#background-container {
+  position: absolute;
+  background-size: 1920px 2000px;
+  height: 1800px;
+  max-width: 1920px;
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: top center;
+  background-image: url("../assets/images/background-artanis.jpg");
+}
+
+#background-video-container {
+  width: 1920px;
+  height: 1000px;
+  left: 50%;
+  margin-left: -960px;
+  display: block;
+  position: absolute;
+}
+
+/* padding top voor logo starcraft 2 */
+.header-content {
+  position: relative;
+  top: 0;
+  padding-top: 545px;
+}
+
+/* Starcraft 2 logo */
+.header-content figure {
+  margin: 0 auto;
+  display: block;
+}
+
+.header-content figure img {
+  margin: 0 auto;
+  display: block;
+}
+
+.howtoplay-heading span {
+  font-family: Eurostile Extd, Source Sans Pro, sans-serif;
+  font-weight: 700;
+  text-shadow: none;
+  padding: 4px 5px;
+  margin-right: 10px;
+  margin-left: -45px;
+  color: #000;
+  text-align: center;
+  line-height: 1;
+  border-radius: 100%;
+  background: #9cf;
+  content: counter(step-counter);
+}
+
+.sc2box h2 {
+  min-height: 70px;
+}
+
+.sc2box {
+  background-color: #000d1a;
+  margin: 0 20px;
+}
+
+.sc2box p {
+  padding: 20px 25px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Text block in header */
+#headsection1 p,
+#headsection2 p {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#headsection1 p {
+  margin-bottom: 150px;
+}
+
+/* Videos centered */
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Main */
+main {
+  padding-top: 50px;
+}
+
+main::before {
+  background: url("../assets/images/divider.png");
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  position: relative;
+  top: -55px;
+  content: "";
+  background-position: center center;
+  height: 33px;
+  display: block;
+  width: 100%;
+  z-index: 20;
+}
+
+/* Background section gamemodes */
+#wrappergamemodes {
+  background-image: url("../assets/images/gamemodes-edited.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+#gamemodes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 650px;
+  max-width: 1728px;
+  margin: 0 auto;
+}
+
+.videocontainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* how to play section */
+#howtoplay::before {
+  background: url("../assets/images/divider.png");
+  position: relative;
+  top: -19px;
+  content: "";
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 33px;
+  display: block;
+  width: 100%;
+  z-index: 21;
+}
+
+#howtoplay > h3 {
+  text-align: center;
+  color: #7aa3cc;
+  letter-spacing: 5px;
+  margin-top: 150px;
+}
+
+@media (max-width: 1680px) {
+  #howtoplay > h3 {
+    margin-top: 75px;
+  }
+}
+
+#howtoplay {
+  background-image: url("../assets/images/background-howtoplayv5.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#howtoplaylistol {
+  padding-top: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+  list-style: none;
+  padding-bottom: 300px;
+}
+
+@media (max-width: 1680px) {
+  #howtoplaylistol {
+    padding-top: 700px;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #howtoplaylistol {
+    padding-top: 600px;
+    max-width: 1000px;
+  }
+
+  main::before {
+    background:none;
+  }
+
+  main {
+    padding-top:300px;
+  }
+
+  body #headsection1 p {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #howtoplaylistol {
+    padding-top: 500px;
+    max-width: 1000px;
+  }
+
+  #gamemodes {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    width:50%;
+    padding-bottom:300px;
+  }
+
+  main {
+    padding-top:100px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  #background-video-container {
+    display:none;
+  }
+
+  #gamemodes {
+    width:80%;
+  }
+
+  #howtoplaylistol {
+    grid-template-columns: 1fr;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  #gamemodes {
+    width: 95%;
+    padding-bottom:175px;
+  }
+
+  #howtoplaylistol {
+    padding-top: 630px;
+  }
+
+  .header-content figure img {
+    padding-top: 50px;
+    width:75%;
+  }
+
+  #headsection1 h1 {
+    font-size:20px;
+  }
+
+  .ytvid iframe {
+    width:340px;
+    height:190px;
+  }
+
+  main {
+    padding-top:200px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .ytvid {
+    display:none;
+  }
+
+  #gamemodes, #gamemodes article  {
+    margin:0;
+    width:100%;
+  }
+
+}
+
+
+#spacecontainer img {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+
+#howtoplaylistol li {
+  padding: 0 40px;
+}
+
+.howtoplay-heading {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Eurostile Extd, Source Sans Pro, sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 8px 16px rgba(0, 0, 0, 0.6);
+  line-height: 1.4;
+}

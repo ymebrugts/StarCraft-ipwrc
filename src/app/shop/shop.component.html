@@ -1,0 +1,136 @@
+<header>
+  <!-- navigation see through -->
+  <nav id="desktop">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="currentpage"><a href="shop.html">Shop</a></li>
+      <li><a href="http://us.battle.net/sc2/en/game/maps-and-mods/" target="_blank">Arcade</a></li>
+      <li id="last"><a href="https://us.battle.net/support/en/" target="_blank">Contact</a></li>
+      <li id="playfreenow"><a href="https://www.battle.net/download/getInstallerForGame?gameProgram=STARCRAFT_2">Play Free Now</a></li>
+    </ul>
+  </nav>
+  <nav id="mobile">
+    <input id="dropdown" class="input-box" type="checkbox" style="display:none;">
+    <label for="dropdown" class="dropdown">
+          <span class="hamburger">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </span>
+    </label>
+    <a href="#" id="logosc2">
+      <figure>
+        <img src="../../assets/images/header/navicon.png" alt="navicon Starcraft">
+      </figure>
+    </a>
+    <ul id="mobilemenu">
+      <li><a href="index.html">Home</a></li>
+      <li class="currentpage"><a href="shop.html">Shop</a></li>
+      <li><a href="http://us.battle.net/sc2/en/game/maps-and-mods/" target="_blank">Arcade</a></li>
+      <li><a href="https://us.battle.net/support/en/" target="_blank">Contact</a></li>
+      <li><a href="https://www.battle.net/download/getInstallerForGame?gameProgram=STARCRAFT_2">Play Free Now</a></li>
+    </ul>
+  </nav>
+  <figure id="logoheaderfigure">
+    <img src="../../assets/images/lotv-logo.png" alt="Starcraft 2 Logo" id="logoheader" />
+  </figure>
+</header>
+<main>
+  <div id="backgroundwrapper">
+    <section>
+      <h1>Campaigns</h1>
+      <p class="shoptext">Multiplayer is completely free but the single-player Campaigns are for sale. Enter the Koprulu sector and do battle as zerg, protoss, or terran in this real-time strategy game.</p>
+      <ul>
+        <li>
+          <h3>Wings of Liberty</h3>
+          <img src="../../assets/images/shop/wol.jpg" alt="Wings of Liberty" />
+          <div class="button-container">
+            <h4><span class="prijs">&euro; 19,99</span></h4>
+            <a class="nukopenknop" href="#modal-one">
+              <span>BUY NOW</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <h3>Heart of the Swarm</h3>
+          <img src="../../assets/images/shop/hots.jpg" alt="Heart of the Swarm" />
+          <div class="button-container">
+            <h4><span class="prijs">&euro; 19,99</span></h4>
+            <a class="nukopenknop" href="#modal-one">
+              <span>BUY NOW</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <h3>Legacy of the Void</h3>
+          <img src="../../assets/images/shop/lotv.jpg" alt="Legacy of the Void" />
+          <div class="button-container">
+            <h4><span class="prijs">&euro; 19,99</span></h4>
+            <a class="nukopenknop" href="#modal-one">
+              <span>BUY NOW</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Commanders</h1>
+      <p class="shoptext">Take control of the battlefield with a StarCraft Commander.</p>
+      <ul>
+        <li>
+          <h3>Abathur</h3>
+          <img class="sc2image" src="../../assets/images/shop/abathur.jpg" alt="Abathur commander" />
+          <div class="button-container">
+            <h4><span class="prijs">&euro; 4,99</span></h4>
+            <a class="nukopenknop" href="#modal-one">
+              <span>BUY NOW</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <h3>Alarak</h3>
+          <img src="../../assets/images/shop/alarak.jpg" alt="Alarak commander" />
+          <div class="button-container">
+            <h4><span class="prijs">&euro; 4,99</span></h4>
+            <a class="nukopenknop" href="#modal-one">
+              <span>BUY NOW</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <h3>Fenix</h3>
+          <img src="../../assets/images/shop/fenix.jpg" alt="Fenix commander" />
+          <div class="button-container">
+            <h4><span class="prijs">&euro; 4,99</span></h4>
+            <a class="nukopenknop" href="#modal-one">
+              <span>BUY NOW</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<section class="modal" id="modal-one" aria-hidden="true">
+  <article class="modal-dialog">
+    <div class="modal-header">
+      <h2>Ordering:</h2>
+      <a href="#0" class="btn-close" aria-hidden="true">×</a>
+    </div>
+    <div class="modal-body">
+      <form method="post">
+        <input name="first-name" placeholder="First name" type="text" id="first-name" required="">
+        <input name="last-name" placeholder="Last name" type="text" id="last-name" required="">
+        <input name="email" placeholder="Your email" type="email" id="email" required="">
+        <input name="phone" placeholder="Contact phone" type="tel" id="phone">
+        <input name="postal" placeholder="Postal code" type="text" id="postal" required="">
+        <input name="address" placeholder="Billing address" type="text" id="address" required="">
+        <input name="city" placeholder="City" type="text" id="city" required="">
+        <!-- Decided not to redirect because I don't want to use a link here as the submit button -->
+        <input type="submit" value="Checkout" name="send">
+      </form>
+    </div>
+  </article>
+</section>
